@@ -11,13 +11,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
 </head>
-<style>
-    /* when target on modal */
-    #modalGallery:target {
-        display: flex;
-    }
-</style>
-
 
 <body>
     <section>
@@ -478,7 +471,8 @@
                             class="rounded-lg  xl:h-56 xl:w-80 flex-shrink-0 w-64 h-40 object-cover" />
                     </div>
                     <!-- Modal Gallery -->
-                    <div id="modalGallery" class="fixed inset-0 items-center justify-center hidden z-50">
+                    <!-- when target on modal -->
+                    <div id="modalGallery" class="fixed inset-0 items-center justify-center hidden z-50 target:flex ">
                         <!-- Background Of Gallary Page -->
                         <div class="absolute inset-0 bg-neutral-900 opacity-95"></div>
 
